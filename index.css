@@ -39,7 +39,7 @@ section:nth-of-type(1) {
     background: #FDFFC6;
 }
 #menu{
-    height: 45px;
+    height: 58px;
     width: 100%;
     background: #1C110A ;
     position: sticky;
@@ -50,12 +50,11 @@ section:nth-of-type(1) {
 
     background-color: #1C110A ;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     margin-right: 10px;
     position: absolute;
     right: 10px;
-    margin-bottom: 5px;
-    height: 44px;
+    height: 10vh;
 }
 .header{
     font-size: 25pt;
@@ -65,8 +64,8 @@ section:nth-of-type(1) {
     font-weight: 500;
 }
 #menu_list{
-    padding-top: 45px;
-    transition: all .5s ease-in;
+    padding-top: 58px;
+    transition: all 1s ease-in;
     height: 0;
     overflow: hidden;
     
