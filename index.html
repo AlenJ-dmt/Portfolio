@@ -21,19 +21,21 @@
                         Hello, I'm Alen Diaz, <br>
                         I'm a full-stack Developer
                     </div>
-                    <button class='btn'>See My work</button>
+                    <div>
+                        <a href="#portfolio"><button class='btn'>See My Work</button></a>
+                    </div>
                 </div>
             </section>
         </div>
         <div id='menu'>
             <nav class='menu_bar'>
-                <div id='menu_logo' class="flex">☰</div>
-                <ul id='menu_list'>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>PORTFOLIO</li>
-                    <li>CONTACT</li>
-                </ul>
+                <div id='menu_logo'>☰</div>
+                <div id='menu_list'>
+                    <div><a href="#home">HOME</a></div>
+                    <div><a href="#about">ABOUT</a></div>
+                    <div><a href="#portfolio">PORTFOLIO</a></div>
+                    <div><a href="#contact">CONTACT</a></div>
+                </div>
             </nav>
         </div>
         <!-- ABOUT -->
@@ -65,7 +67,7 @@
                 <div class='header'>
                     PORTFOLIO
                 </div>
-                <div class= 'container'>
+                <div class='container'>
                     <img class='project' src="img/project_one.PNG">
                     <div class='overlay'>
                         <div class='details'> GEOGRAPHY QUIZ</div>
@@ -100,6 +102,8 @@
         </footer>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

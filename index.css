@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     text-align: center;
     font-family: 'Gotu', sans-serif;
@@ -45,15 +48,14 @@ section:nth-of-type(1) {
 }
 #menu_logo{
 
+    background-color: #1C110A ;
     color: white;
     font-size: 30px;
     margin-right: 10px;
     position: absolute;
     right: 10px;
     margin-bottom: 5px;
-}
-#menu_list{
-    display: none;
+    height: 44px;
 }
 .header{
     font-size: 25pt;
@@ -61,6 +63,23 @@ section:nth-of-type(1) {
     position: absolute;
     color: #1C110A ;
     font-weight: 500;
+}
+#menu_list{
+    padding-top: 45px;
+    transition: all .5s ease-in;
+    height: 0;
+    overflow: hidden;
+    
+}
+#menu_list div{
+    display: inherit;
+    margin-top: 0px;
+    font-size: 20px;
+    background-color: #48E5C2;
+}
+#menu_list div a{
+    text-decoration: none;
+    color: ivory;
 }
 #bio{
     margin-top: 15px;
@@ -142,6 +161,9 @@ i{
   }
   a{
       text-decoration: none;
+  }
+  nav{
+      text-align: left;
   }
 @media screen and (min-width: 600px) {
     .project{
