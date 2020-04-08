@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <div>
         <!-- HOME -->
         <div id='home'>
             <section class='flex'>
+                <h2 style="display: none;">HOME</h2>
                 <div class='flex'>
                     <div class='text'>
                         Hello, I'm Alen Diaz, <br>
                         I'm a full-stack Developer
                     </div>
-                    <div>
-                        <a href="#portfolio"><button class='btn'>See My Work</button></a>
+                    <div style="margin-top: 10px;">
+                        <a class='a_btn' href="#portfolio">See my work</a>
                     </div>
                 </div>
             </section>
@@ -32,34 +32,37 @@
         <div id='menu'>
             <nav class='menu_bar'>
                 <div id='menu_logo'>☰</div>
-                <div id='menu_list'>
-                    <div><a href="#home">HOME</a></div>
-                    <div><a href="#about">ABOUT</a></div>
-                    <div><a href="#portfolio">PORTFOLIO</a></div>
-                    <div><a href="#contact">CONTACT</a></div>
-                </div>
+                <ul id='menu_list'>
+                    <li><a class='menu_link' href="#home">HOME</a></li>
+                    <li><a class='menu_link' href="#about">ABOUT</a></li>
+                    <li><a class='menu_link' href="#portfolio">PORTFOLIO</a></li>
+                    <li><a class='menu_link' href="#contact">CONTACT</a></li>
+                </ul>
             </nav>
         </div>
         <!-- ABOUT -->
         <div id='about'>
             <section class="flex">
-                <div class='header'>
-                    ABOUT
-                </div>
+                <h2>ABOUT</h2>
                 <div class="flex img_container">
-                    <img id='profile' src="img/profile.jpg" width="40%">
-                    <div id='bio'>
-
-                        Software developer, web designer, problem solver. I enjoy playing guitar, dancing, and playing soccer.
-
+                    <div class="bio_container">
+                        <img id='profile' src="img/profile.jpg" width="100" alt="Profile_picture">
+                        <p id='bio'>
+                            Software developer, web designer, problem solver. I enjoy playing guitar,
+                            dancing and playing soccer. From playing soccer I've learned that one can be a great player,
+                            but even a great player can't beat teamwork. I am looking forward to work in a team with
+                            great programmers,
+                            and develop high-quality Software.
+                        </p>
                     </div>
-
-                    <h3>TECHNOLOGIES</h3>
-                    <ul>
-                        <li><i class="devicon-html5-plain colored"></i></li>
-                        <li><i class="devicon-javascript-plain colored"></i></li>
-                        <li><i class="devicon-css3-plain colored"></i></li>
-                    </ul>
+                    <div class="tech_container">
+                        <h3 style="text-align: center;">TECHNOLOGIES</h3>
+                        <ul>
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>
@@ -67,24 +70,23 @@
         </div>
         <!-- PORTFOLIO -->
         <div id='portfolio'>
-            <!-- <div id='project_info'>
-                <img class='project' src="img/project_one.PNG">
-                <div>Title</div>
-                <div>Technologies</div>
-                <div>Description</div>
-            </div> -->
             <section class="flex">
-                <div class='detail_box'>
-                </div>
-                <div class='header'>
-                    PORTFOLIO
-                </div>
+                <h2>PORTFOLIO</h2>
                 <div class='container'>
                     <div class='box'>
-                        <img class='project' src="img/project_one.PNG">
-                        <div class='overlay'>
-                            <div class='details'> GEOGRAPHY QUIZ</div>
-                            <button class="btn details">DETAILS</button>
+                        <img class='project img_detail' src="img/project_one.PNG" alt="project image">
+                        <div class='text_container'>
+                            <h3>Geography Quiz</h3>
+                            <p class='technologies'>HTML / CSS / JavaScript / jQuery</p>
+                            <div class='project_description'>This is a web quiz develop with html, css, and javascrip. I
+                                check and validate
+                                user input. The user gets feedback base on answer. Finally user is able to see final
+                                score and restart
+                                quiz if wished</div>
+                        </div>
+                        <div class='btn_container'>
+                            <a class='a_btn' href="https://github.com/AlenJ-dmt/quiz_app" target=“_blank”>Code</a>
+                            <a class='a_btn' href="https://alenj-dmt.github.io/quiz_app/" target=“_blank”>View Site</a>
                         </div>
                     </div>
                 </div>
@@ -93,9 +95,7 @@
         <!-- CONTACT -->
         <div id='contact'>
             <section class="flex">
-                <div class='header'>
-                    CONTACT
-                </div>
+                <h2>CONTACT</h2>
                 <div class='q'>Have a question or want to work together?</div>
                 <form>
                     <label><input placeholder="NAME"></label>
@@ -111,14 +111,15 @@
         <footer>
             <div>
                 <ul class='my_links'>
-                    <li><a href="https://github.com/AlenJ-dmt"><i class="fab fa-github-alt"></i></li>
-                    <li><a href="https://www.linkedin.com/in/alen-diaz-7bb916172/"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="mailto:alen.javier0802@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/AlenJ-dmt" target=“_blank”><i class="fab fa-github-alt"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/alen-diaz-7bb916172/" target=“_blank”><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li><a href="mailto:alen.javier0802@gmail.com" target=“_blank”><i class="fas fa-envelope"></i></a>
+                    </li>
                 </ul>
             </div>
         </footer>
-    </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
 </body>

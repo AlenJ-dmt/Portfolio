@@ -35,6 +35,15 @@ section:nth-of-type(1) {
     font-size: 15px;
     margin: 10px;
 }
+.a_btn{
+    border: black solid 1px;
+    cursor: pointer;
+    background: none;
+    color: black;
+    padding: 5px 25px;
+    font-size: 15px;
+    margin: 10px;
+}
 #home{
     background: #FDFFC6;
 }
@@ -42,7 +51,7 @@ section:nth-of-type(1) {
     height: 58px;
     width: 100%;
     background: #1C110A ;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 2;
 }
@@ -56,35 +65,49 @@ section:nth-of-type(1) {
     right: 10px;
     height: 58px;
 }
-.header{
+h2{
     font-size: 25pt;
-    top: 110px;
+    top: 50px;
     position: absolute;
     color: #1C110A ;
     font-weight: 500;
+}
+.technologies{
+    font-size: 10px;
+    color: gray;
+    text-align: left;
 }
 #menu_list{
     padding-top: 58px;
     transition: all 1s ease-in;
     height: 0;
     overflow: hidden;
+    display: block;
+    
     
 }
-#menu_list div{
+#menu_list li{
     display: inherit;
     margin-top: 0px;
     font-size: 20px;
     background-color: #48E5C2;
 }
-#menu_list div a{
+#menu_list li a{
     text-decoration: none;
     color: ivory;
 }
-#bio{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 13px;
+.bio_container{
+    text-align: center;
 }
+#bio{
+    font-size: 13px;
+    text-align: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 form{
     width: 100%;
     position: relative;
@@ -129,20 +152,16 @@ i{
     font-size: 50px;
     color: white;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .9s ease;
-    background-color: white;
-  }
+.btn_container{
+    margin-top: 15px;
+}
+#profile{
+    float: left;
+    margin-right: 10px;
+}
   .container{
       position: relative;
+      top: 40px;
   }
   .container:hover .overlay {
     opacity: 1;
@@ -185,15 +204,14 @@ i{
     background-color: white;
     z-index: -1;
 }
-.img_detail{
-    border-bottom: solid 2px black;
-}
-.project_title{
+h3{
     font-size: 20px;
     text-align: left;
+    margin-top: 15px;
 }
 .project_description{
     text-align: left;
+    font-size: 13px;
 }
 .text_container{
     padding: 10px;
@@ -214,7 +232,8 @@ i{
     top: 45px;
 }
 .img_container{
-    top: 60px;
+    top: 30px;
+    padding: 20px;
 }
 .my_links > li{
     height: 30px;
@@ -224,14 +243,30 @@ i{
 h3{
     margin: 0;
 }
-@media screen and (min-width: 400px) {
+.tech_container{
+    position: relative;
+    top: 50px;
+}
+@media screen and (min-width: 500px) {
     #profile{
-        width: 25%;
+       width: 150px;
+    }
+    .bio_container{
+        width: 80%;
+    }
+    .project{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text_container {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 @media screen and (min-width: 600px) {
     .project{
         margin: 0 auto;
+        width: 80%;
     }
     form{
         width: 60%;
@@ -258,5 +293,52 @@ h3{
     .text_container{
         width: 70%;
         margin: 0 auto;
+    }
+    #menu{
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+    }
+    #menu_logo{
+        display: none;
+    }
+    #menu_list{
+        display: inline;    
+        position: relative;
+        right: 0px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu_link{
+        color: white;
+        font-size: 20px;
+    }
+    #menu_list li{
+        background: none;
+        
+    }
+    .menu_bar{
+        margin-top: 15px;
+        text-align: right;
+    }
+    .bio_container{
+        width: 50%;
+    }
+    #profile{
+        padding-right: 20px;
+    }
+    .img_detail{
+        width: 40%;
+        float: left;
+    }
+    .text_container{
+        width: 60%;
+        margin-right: 0;
+    }
+    .container{
+        width: 80%;
+    }
+    .btn_container{
+        text-align: right;
     }
 }
