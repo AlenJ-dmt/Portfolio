@@ -26,10 +26,10 @@ function project_detail_handler() {
         $('.detail_box').append(`
         <img class='project img_detail' src="img/project_one.PNG">
                     <div class='text_container'>
-                        <div class='project_title'>Title</div>
-                        <div class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis modi non suscipit vitae. Mollitia enim nam quod molestiae assumenda rerum odio
-                            eligendi deleniti? Earum animi facilis iure velit suscipit voluptatem!</div>
+                        <div class='project_title'>Geography Quiz</div>
+                        <div class='project_description'>This is a web quiz develop with html, css, and javascrip. I check and validate 
+                        user input. The user gets feedback base on answer. Finally user is able to see final score and restart 
+                        quiz if wished</div>
                     </div>
                     <div class='btn_container'>
                         <a href="https://github.com/AlenJ-dmt/quiz_app"><button class="btn">Code</button></a>
