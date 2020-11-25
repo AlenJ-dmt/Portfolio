@@ -1,127 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="https://kit.fontawesome.com/9cd5b2a407.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gotu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9cd5b2a407.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-        <!-- HOME -->
-        <div id='home'>
-            <section class='flex'>
-                <h2 style="display: none;">HOME</h2>
-                <div class='flex'>
-                    <div class='text'>
-                        Hello, I'm Alen Diaz, <br>
-                        I'm a full-stack Developer
-                    </div>
-                    <div style="margin-top: 10px;">
-                        <a class='a_btn' href="#portfolio">See my work</a>
-                    </div>
+  <body>
+    <!-- HOME -->
+    <div id="home">
+      <section class="flex">
+        <h2 style="display: none">HOME</h2>
+        <div class="flex">
+          <div class="text">
+            Hello, I'm Alen Diaz, <br />
+            I'm a full-stack Developer
+          </div>
+          <div style="margin-top: 10px">
+            <a class="a_btn" href="#portfolio">See my work</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="menu">
+      <nav class="menu_bar">
+        <div id="menu_logo">☰</div>
+        <ul id="menu_list">
+          <li><a class="menu_link" href="#home">HOME</a></li>
+          <li><a class="menu_link" href="#about">ABOUT</a></li>
+          <li><a class="menu_link" href="#portfolio">PORTFOLIO</a></li>
+          <li><a class="menu_link" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <section class="flex">
+        <h2>ABOUT</h2>
+        <div class="flex img_container">
+          <div class="bio_container">
+            <img
+              id="profile"
+              src="img/profile.jpg"
+              width="100"
+              alt="Profile_picture"
+            />
+            <p id="bio">
+              Software developer, web designer, problem solver. I enjoy playing
+              guitar, dancing and playing soccer. From playing soccer I've
+              learned that one can be a great player, but even a great player
+              can't beat teamwork. I am looking forward to work in a team with
+              great programmers, and develop high-quality Software.
+            </p>
+          </div>
+          <div class="tech_container">
+            <h3 style="text-align: center">TECHNOLOGIES</h3>
+            <ul>
+              <li><i class="devicon-html5-plain colored"></i></li>
+              <li><i class="devicon-javascript-plain colored"></i></li>
+              <li><i class="devicon-css3-plain colored"></i></li>
+              <li><i class="devicon-react-original colored"></i></li>
+              <li><i class="devicon-nodejs-plain colored"></i></li>
+              <li><i class="devicon-express-original colored"></i></li>
+              <li><i class="devicon-postgresql-plain colored"></i></li>
+              <li><i class="devicon-heroku-plain colored"></i></li>
+              <li><i class="devicon-visualstudio-plain colored"></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+      <section class="flex">
+        <h2>PORTFOLIO</h2>
+        <div class="projects-container">
+          <div class="box">
+            <img
+              class="project img_detail"
+              src="img/animation-station.PNG"
+              alt="project image"
+            />
+            <div class="description-container">
+              <div class="text_container">
+                <h3>Animation Station</h3>
+                <p class="technologies">
+                  React / HTML / CSS / JavaScript / Express.js / Node.js /
+                  Postgres
+                </p>
+                <div class="project_description">
+                  AnimationStation is an application that lets users create css
+                  animations using a graphical interface and then save the
+                  corresponding CSS code.
                 </div>
-            </section>
-        </div>
-        <div id='menu'>
-            <nav class='menu_bar'>
-                <div id='menu_logo'>☰</div>
-                <ul id='menu_list'>
-                    <li><a class='menu_link' href="#home">HOME</a></li>
-                    <li><a class='menu_link' href="#about">ABOUT</a></li>
-                    <li><a class='menu_link' href="#portfolio">PORTFOLIO</a></li>
-                    <li><a class='menu_link' href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- ABOUT -->
-        <div id='about'>
-            <section class="flex">
-                <h2>ABOUT</h2>
-                <div class="flex img_container">
-                    <div class="bio_container">
-                        <img id='profile' src="img/profile.jpg" width="100" alt="Profile_picture">
-                        <p id='bio'>
-                            Software developer, web designer, problem solver. I enjoy playing guitar,
-                            dancing and playing soccer. From playing soccer I've learned that one can be a great player,
-                            but even a great player can't beat teamwork. I am looking forward to work in a team with
-                            great programmers,
-                            and develop high-quality Software.
-                        </p>
-                    </div>
-                    <div class="tech_container">
-                        <h3 style="text-align: center;">TECHNOLOGIES</h3>
-                        <ul>
-                            <li><i class="devicon-html5-plain colored"></i></li>
-                            <li><i class="devicon-javascript-plain colored"></i></li>
-                            <li><i class="devicon-css3-plain colored"></i></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-
-        </div>
-        <!-- PORTFOLIO -->
-        <div id='portfolio'>
-            <section class="flex">
-                <h2>PORTFOLIO</h2>
-                <div class='container'>
-                    <div class='box'>
-                        <img class='project img_detail' src="img/project_one.PNG" alt="project image">
-                        <div class='text_container'>
-                            <h3>Geography Quiz</h3>
-                            <p class='technologies'>HTML / CSS / JavaScript / jQuery</p>
-                            <div class='project_description'>This app takes the user through a series of questions about 
-                                geography and prompts feedback base on answers. After answering the last question the 
-                                user can see their overall score and restart the quiz.  I created this quiz to enable 
-                                people to test their knowledge of geography. I find this app to be appealing mostly to 
-                                students of any age. </div>
-                        </div>
-                        <div class='btn_container'>
-                            <a class='a_btn' href="https://github.com/AlenJ-dmt/quiz_app" target=“_blank”>Code</a>
-                            <a class='a_btn' href="https://alenj-dmt.github.io/quiz_app/" target=“_blank”>View Site</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- CONTACT -->
-        <div id='contact'>
-            <section class="flex">
-                <h2>CONTACT</h2>
-                <div class='q'>Have a question or want to work together?</div>
-                <form>
-                    <label><input placeholder="NAME"></label>
-                    <label><input placeholder="EMAIL"></label>
-                    <textarea placeholder="MESSAGE">
-                    </textarea>
-                </form>
-                <button class="btn send_btn">
-                    SEND
-                </button>
-            </section>
-        </div>
-        <footer>
-            <div>
-                <ul class='my_links'>
-                    <li><a href="https://github.com/AlenJ-dmt" target=“_blank”><i class="fab fa-github-alt"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/alen-diaz-7bb916172/" target=“_blank”><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a href="mailto:alen.javier0802@gmail.com" target=“_blank”><i class="fas fa-envelope"></i></a>
-                    </li>
-                </ul>
+              </div>
+              <div class="btn_container">
+                <a
+                  class="a_btn"
+                  href="https://github.com/nathanielmata/css-animator-capstone-client"
+                  target="“_blank”"
+                  >Code</a
+                >
+                <a
+                  class="a_btn"
+                  href="https://css-animator-capstone-client.vercel.app/"
+                  target="“_blank”"
+                  >View Site</a
+                >
+              </div>
             </div>
-        </footer>
+          </div>
+          <div class="box">
+            <img
+              class="project img_detail"
+              src="img/redline.PNG"
+              alt="project image"
+            />
+            <div class="description-container">
+              <div class="text_container">
+                <h3>Redline Inventory</h3>
+                <p class="technologies">
+                  React / HTML / CSS / JavaScript / Node.js/ Express.js /
+                  Postgres
+                </p>
+                <div class="project_description">
+                  This app will allow tire & wheel shop owners a more efficient
+                  way to keep up with what they have in stock. A very modern and
+                  user-friendly interface with a powerful and organized storage
+                  system. I created this app because as someone who has worked
+                  in this industry I notice a great need for modernization and
+                  better organization of their inventory system.
+                </div>
+              </div>
+              <div class="btn_container">
+                <a
+                  class="a_btn"
+                  href="https://github.com/AlenJ-dmt/capstone-one-front-end"
+                  target="“_blank”"
+                  >Code</a
+                >
+                <a
+                  class="a_btn"
+                  href="https://redline.vercel.app/"
+                  target="“_blank”"
+                  >View Site</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <img
+              class="project img_detail"
+              src="img/project_one.PNG"
+              alt="project image"
+            />
+            <div class="description-container">
+              <div class="text_container">
+                <h3>Geography Quiz</h3>
+                <p class="technologies">HTML / CSS / JavaScript / jQuery</p>
+                <div class="project_description">
+                  This app takes the user through a series of questions about
+                  geography and prompts feedback base on answers. After
+                  answering the last question the user can see their overall
+                  score and restart the quiz.  I created this quiz to enable
+                  people to test their knowledge of geography. I find this app
+                  to be appealing mostly to students of any age. 
+                </div>
+              </div>
+              <div class="btn_container">
+                <a
+                  class="a_btn"
+                  href="https://github.com/AlenJ-dmt/quiz_app"
+                  target="“_blank”"
+                  >Code</a
+                >
+                <a
+                  class="a_btn"
+                  href="https://alenj-dmt.github.io/quiz_app/"
+                  target="“_blank”"
+                  >View Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+      <section class="flex">
+        <h2>CONTACT</h2>
+        <div class="q">Have a question or want to work together?</div>
+        <form>
+          <label><input placeholder="NAME" /></label>
+          <label><input placeholder="EMAIL" /></label>
+          <textarea placeholder="MESSAGE"> </textarea>
+        </form>
+        <button class="btn send_btn">SEND</button>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <ul class="my_links">
+          <li>
+            <a href="https://github.com/AlenJ-dmt" target="“_blank”"
+              ><i class="fab fa-github-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/alen-diaz-7bb916172/"
+              target="“_blank”"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:alen.javier0802@gmail.com" target="“_blank”"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
