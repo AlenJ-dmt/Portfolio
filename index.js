@@ -1,29 +1,28 @@
 function toggle_hamburger_menu() {
-    $('#menu_logo').click(() => {
-        if ($('#menu_list').height() === 0) {
-            $('#menu_list').css('height', 300)
-        }
-        else if ($('#menu_list').height() !== 0) {
-            $('#menu_list').css('height', 0)
-        }
-    })
+  $("#menu_logo").click(() => {
+    if ($("#menu_list").height() === 0) {
+      $("#menu_list").css("height", 300);
+    } else if ($("#menu_list").height() !== 0) {
+      $("#menu_list").css("height", 0);
+    }
+  });
 }
 function close_menu_on_click() {
-    $('#menu_list div a').click(() => {
-        $('#menu_list').height(0);
-    })
+  $("#menu_list div a").click(() => {
+    $("#menu_list").height(0);
+  });
 }
 function close_menu_on_screen_touch() {
-    $('body').click(() => {
-        if ($('#menu_list').height() !== 0) {
-            $('#menu_list').css('height', 0)
-        }
-    })
+  $("body").click(() => {
+    if ($("#menu_list").height() !== 0) {
+      $("#menu_list").css("height", 0);
+    }
+  });
 }
 function project_detail_handler() {
-    $('.btn.details').click(() => {
-        $('.detail_box').css('z-index', 5)
-        $('.detail_box').append(`
+  $(".btn.details").click(() => {
+    $(".detail_box").css("z-index", 5);
+    $(".detail_box").append(`
         <img class='project img_detail' src="img/project_one.PNG">
                     <div class='text_container'>
                         <div class='project_title'>Geography Quiz</div>
@@ -38,18 +37,39 @@ function project_detail_handler() {
                     <div class="close_details">
                         <button class='btn close'>X</button>
                     </div>
-        `)
-    })
+        `);
+  });
 
-    $('.detail_box').click('close_details',function() {
-        $('.detail_box').empty()
-        $('.detail_box').css('z-index', -5)
-    })
+  $(".detail_box").click("close_details", function () {
+    $(".detail_box").empty();
+    $(".detail_box").css("z-index", -5);
+  });
 }
+
+function sendMail() {
+  $(".send_btn").click(function () {
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let body = $("#content").val();
+
+    $(location).attr(
+      "href",
+      "mailto:noricual@gmail.com?subject=" +
+        encodeURIComponent(name + "/" + email) +
+        "&body=" +
+        encodeURIComponent(body)
+    );
+    $("#name").val("");
+    $("#email").val("");
+    $("#content").val("");
+  });
+}
+
 function main() {
-    toggle_hamburger_menu();
-    close_menu_on_click();
-    close_menu_on_screen_touch();
-    project_detail_handler();
+  toggle_hamburger_menu();
+  close_menu_on_click();
+  close_menu_on_screen_touch();
+  project_detail_handler();
+  sendMail();
 }
 main();

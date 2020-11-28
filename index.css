@@ -16,7 +16,7 @@ body {
   text-align: center;
   font-family: "Gotu", sans-serif;
   overflow-x: hidden;
-  font-size: 8pt;
+  font-size: 14px;
   min-width: 100%;
   margin: 0;
 }
@@ -80,8 +80,8 @@ h2 {
   font-weight: 500;
 }
 .technologies {
-  font-size: 10px;
-  color: gray;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
   text-align: left;
 }
 #menu_list {
@@ -105,7 +105,7 @@ h2 {
   text-align: center;
 }
 #bio {
-  font-size: 13px;
+  font-size: 14px;
   text-align: left;
   display: block;
   padding: 0;
@@ -218,7 +218,7 @@ h3 {
 }
 .project_description {
   text-align: left;
-  font-size: 13px;
+  font-size: 14px;
 }
 .text_container {
   padding: 10px;
@@ -234,7 +234,7 @@ h3 {
   border: none;
 }
 .q {
-  font-size: 13px;
+  font-size: 15px;
   position: relative;
   top: 45px;
 }
@@ -254,7 +254,13 @@ h3 {
   position: relative;
   top: 50px;
 }
+@media screen and (min-width: 380px){
+  #portfolio{
+    height: 310vh;
+  }
+}
 @media screen and (min-width: 500px) {
+ 
   #profile {
     width: 150px;
   }
@@ -279,6 +285,9 @@ h3 {
   }
 }
 @media screen and (min-width: 600px) {
+  #portfolio{
+    height: 220vh;
+  }
   .project {
     margin: 0 auto;
     width: 45%;
@@ -291,6 +300,9 @@ h3 {
   }
 }
 @media screen and (min-width: 750px) {
+  #portfolio{
+    height: 220vh;
+  }
   .project {
     width: 60%;
     position: relative;
