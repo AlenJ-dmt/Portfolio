@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+.form_label {
+  float: left;
+  text-align: left;
+}
 #portfolio{
 height: 220vh;
 display: block;
@@ -245,6 +249,10 @@ h3 {
 .my_links > li {
   height: 30px;
   padding: 20px;
+}
+
+.my_links > li > a{
+  color: white;
 }
 
 h3 {
