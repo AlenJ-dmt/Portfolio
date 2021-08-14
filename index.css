@@ -76,6 +76,9 @@ section:nth-of-type(1) {
   right: 10px;
   height: 58px;
 }
+#contact{
+  top: 200px;
+}
 h2 {
   font-size: 25pt;
   top: 50px;
@@ -372,6 +375,7 @@ h3 {
   }
   .projects-container {
     width: 80%;
+    top: 100px;
   }
   .btn_container {
     text-align: right;
